@@ -1,0 +1,12 @@
+sudo apt-get update
+sudo apt install openjdk-11-jdk  -- To install the java JDK to support Maven
+
+apt install maven
+maven --version
+
+git clone https://github.com/spring-projects/spring-petclinic.git
+cd spring-petclinic
+./mvnw package
+java -jar target/*.jar (After building a code run this command ) OR 
+cd target
+java -jar target.jar (Jar file created)
